@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Happily Healthy</title>
+    <link rel="stylesheet" href="happilyhealthy.css">
+    <script src="happilyhealthy.js"></script>
+    <script src="https://kit.fontawesome.com/0bcf1773f5.js"></script>
+  </head>
+  <body>
+    <h1><button>Happily Healthy<span class="fab fa-pagelines"></span></button></h1>
+
+    <div id = "navigationbar">
+    <button onclick="showAll();"class="mealtab" id="allrecipes" > All Recipes </button>
+    <button onclick="showBreakfast()"class="mealtab" id="breakfast"> Breakfast </button>
+    <button onclick="showLunch()"class="mealtab" id="lunch"> Lunch </button>
+    <button onclick="showSnacks()"class="mealtab" id="snacks"> Snacks </button>
+    <button onclick="showDinner()"class="mealtab" id="dinner"> Dinner </button>
+    </div>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span onclick = "closeRecipeAlert()" class="close">&times;</span>
+        <p>Some text in the Modal..</p>
+      </div>
+
+    </div>
+
+    <div id="pictures">
+      <img id="salmon" onclick="showRecipeAlert(this.id)"class="showdinner" src = "steamedsalmon.png"></img>
+      <img id="bakedoatmeal"onclick="showRecipeAlert(this.id)"class="showbreakfast"src = "bakedoatmeal.png"></img>
+      <img id="taiwanchicken"onclick="showRecipeAlert(this.id)"class="showdinner"src = "taiwanchicken.png"></img>
+      <img id="taroballs"onclick="showRecipeAlert(this.id)"class="showsnacks"src = "taroballs.jpg"></img>
+      <img id="almondflourcookies"onclick="showRecipeAlert(this.id)"class="showsnacks"src = "almondflourcookies.png"></img>
+      <img id="tarocake"onclick="showRecipeAlert(this.id)"class="showsnacks"src = "tarocake.png"></img>
+      <img id="shumai"onclick="showRecipeAlert(this.id)"class="showlunch"src = "shumai.png"></img>
+      <img id="cheesecake"onclick="showRecipeAlert(this.id)"class="showsnacks"src = "cheesecake.png"></img>
+      <img id="eggtarts"onclick="showRecipeAlert(this.id)"class="showsnacks"src = "eggtarts.png"></img>
+      <img id="friedmilk"onclick="showRecipeAlert(this.id)"class="showsnacks"src = "friedmilk.png"></img>
+      <img id="sago"onclick="showRecipeAlert(this.id)"class="showsnacks" src = "sago.png" ></img>
+
+      <img id="broccolipotatobites"onclick="showRecipeAlert(this.id)"class="showsnacks"src = "broccolipotatobites.jpg"></img>
+
+
+    </div>
+
+
+  </body>
+</html>
