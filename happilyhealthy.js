@@ -383,7 +383,7 @@ function createRecipeContent(id, modal){
   }
   if (id == "almondflourcookies"){
     modal.getElementsByTagName("p")[0].innerHTML = "<br><b> Almond Flour Cookies </b><br> \
-    <br>Makes 16-18 cookies. <br>\
+    <br><br>Makes 16-18 cookies. <br>\
     <br>​Ingredients:<br>\
     2 cups almond flour <br>\
     1 1/2 tbsp honey <br>\
