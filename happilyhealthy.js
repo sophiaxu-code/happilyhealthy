@@ -101,7 +101,7 @@ function createRecipeContent(id, modal) {
     10. Steam for 6-8 min depending on size of salmon. Do not lift the lid. <br> \
     11. Turn the heat off, and let sit for another 3 min. <br> \
     12. Take the salmon out and garnish with the green scallions. <br> \
-    "
+    13. Serve."
   }
 
   if (id == "taiwanchicken") {
