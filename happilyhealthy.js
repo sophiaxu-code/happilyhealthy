@@ -1,64 +1,64 @@
 
 
-function showAll(){
+function showAll() {
   var images = document.getElementsByTagName("img");
-  for (i=0; i < images.length; i++){
+  for (i = 0; i < images.length; i++) {
     var img = images[i];
-    img.style.display="inline-block";
+    img.style.display = "inline-block";
   }
 }
 
-function showDinner(){
+function showDinner() {
   var images = document.getElementsByTagName("img");
-  for (i=0; i < images.length; i++){
+  for (i = 0; i < images.length; i++) {
     var img = images[i].className;
-    if (img == "showdinner"){
-      images[i].style.display="inline-block";
+    if (img == "showdinner") {
+      images[i].style.display = "inline-block";
     }
-    else{
-      images[i].style.display="none";
-    }
-  }
-}
-
-function showLunch(){
-  var images = document.getElementsByTagName("img");
-  for (i=0; i < images.length; i++){
-    var img = images[i].className;
-    if (img == "showlunch"){
-      images[i].style.display="inline-block";
-    }
-    else{
-      images[i].style.display="none";
-    }
-  }
-}
-function showBreakfast(){
-  var images = document.getElementsByTagName("img");
-  for (i=0; i < images.length; i++){
-    var img = images[i].className;
-    if (img == "showbreakfast"){
-      images[i].style.display="inline-block";
-    }
-    else{
-      images[i].style.display="none";
-    }
-  }
-}
-function showSnacks(){
-  var images = document.getElementsByTagName("img");
-  for (i=0; i < images.length; i++){
-    var img = images[i].className;
-    if (img == "showsnacks"){
-      images[i].style.display="inline-block";
-    }
-    else{
-      images[i].style.display="none";
+    else {
+      images[i].style.display = "none";
     }
   }
 }
 
-function showRecipeAlert(id){
+function showLunch() {
+  var images = document.getElementsByTagName("img");
+  for (i = 0; i < images.length; i++) {
+    var img = images[i].className;
+    if (img == "showlunch") {
+      images[i].style.display = "inline-block";
+    }
+    else {
+      images[i].style.display = "none";
+    }
+  }
+}
+function showBreakfast() {
+  var images = document.getElementsByTagName("img");
+  for (i = 0; i < images.length; i++) {
+    var img = images[i].className;
+    if (img == "showbreakfast") {
+      images[i].style.display = "inline-block";
+    }
+    else {
+      images[i].style.display = "none";
+    }
+  }
+}
+function showSnacks() {
+  var images = document.getElementsByTagName("img");
+  for (i = 0; i < images.length; i++) {
+    var img = images[i].className;
+    if (img == "showsnacks") {
+      images[i].style.display = "inline-block";
+    }
+    else {
+      images[i].style.display = "none";
+    }
+  }
+}
+
+function showRecipeAlert(id) {
   var recipeid = id;
   var modal = document.getElementById("myModal");
   // createRecipeContent(recipeid, modal);
@@ -68,14 +68,14 @@ function showRecipeAlert(id){
 
 }
 
-function closeRecipeAlert(){
+function closeRecipeAlert() {
   var modal = document.getElementById("myModal");
   modal.style.display = "none";
 }
 
-function createRecipeContent(id, modal){
+function createRecipeContent(id, modal) {
   var content = modal.getElementsByTagName("p")[0].innerHTML;
-  if (id == "salmon"){
+  if (id == "salmon") {
     modal.getElementsByTagName("p")[0].innerHTML = "<br><b> Steamed Asian Salmon </b><br> \
     <br> Ingredients: <br> \
     1 salmon fillet,cleaned and prepped (remove bones)<br> \
@@ -101,10 +101,10 @@ function createRecipeContent(id, modal){
     10. Steam for 6-8 min depending on size of salmon. Do not lift the lid. <br> \
     11. Turn the heat off, and let sit for another 3 min. <br> \
     12. Take the salmon out and garnish with the green scallions. <br> \
-    13. Serve."
+    "
   }
 
-  if (id == "taiwanchicken"){
+  if (id == "taiwanchicken") {
     modal.getElementsByTagName("p")[0].innerHTML = "<br><b> Taiwanese Popcorn Chicken </b><br> \
     <br>Ingredients:<br>\
     1 lb chicken drumsticks <br> \
@@ -147,7 +147,7 @@ function createRecipeContent(id, modal){
     18. Garnish with basil or cilantro."
   }
 
-  if (id == "taroballs"){
+  if (id == "taroballs") {
     modal.getElementsByTagName("p")[0].innerHTML = "<br><b> Taiwanese Taro Balls </b><br> \
     <br> Ingredients:<br> \
     <br> Flour Mixture: <br><br> \
@@ -172,7 +172,7 @@ function createRecipeContent(id, modal){
     6) Immediately dump into ice water before draining and serving."
   }
 
-  if (id == "bakedoatmeal"){
+  if (id == "bakedoatmeal") {
     modal.getElementsByTagName("p")[0].innerHTML = " <br><b> Cinnamon Apple Baked Oatmeal </b><br> \
     <br> Ingredients:<br> \
     3 cups rolled oats <br> \
@@ -201,7 +201,7 @@ function createRecipeContent(id, modal){
     9. Enjoy!"
   }
 
-  if (id == "tarocake"){
+  if (id == "tarocake") {
     modal.getElementsByTagName("p")[0].innerHTML = " <br><b> Fuzhou Triangle Cake </b><br> \
     <br>Ingredients:<br>\
     2 cups turnip cake powder <br> \
@@ -224,7 +224,7 @@ function createRecipeContent(id, modal){
 
   }
 
-  if (id == "cheesecake"){
+  if (id == "cheesecake") {
     modal.getElementsByTagName("p")[0].innerHTML = " <br><b> Rice Cooker Japanese Cheesecake </b><br> \
     <br>Ingredients:<br>\
     12 oz. cream cheese, softened at room temp <br>\
@@ -250,7 +250,7 @@ function createRecipeContent(id, modal){
     11. When done, reset rice cooker and let sit until the rice cooker cools down a bit before transferring to plate. <br>\
     The top center will be the last to cook, so when that part is cooked, the cheesecake should be done. It's easier to undercook and incrementally add time. An overcooked cheesecake will be fine when it's warm but turn hard once it has cooled down, but a real cheesecake should still be soft and fluffy after being in the fridge."
   }
-  if (id == "eggtarts"){
+  if (id == "eggtarts") {
     modal.getElementsByTagName("p")[0].innerHTML = " <br><b> HK Egg Tarts </b><br> \
     <br>Ingredients:<br>\
     <br>Crust<br> \
@@ -287,7 +287,7 @@ function createRecipeContent(id, modal){
     4) Let cool before removing from tins."
   }
 
-  if (id == "shumai"){
+  if (id == "shumai") {
     modal.getElementsByTagName("p")[0].innerHTML = " <br><b> Glutinous Rice Shumai </b><br> \
     <br>Makes 35-40 shumai. <br>\
     <br>Ingredients: <br>\
@@ -320,7 +320,7 @@ function createRecipeContent(id, modal){
     12. Steam for ~10 minutes. After the water has been boiling for 2-3 minutes, check to make sure the skin is cooked before serving."
   }
 
-  if (id == "friedmilk"){
+  if (id == "friedmilk") {
     modal.getElementsByTagName("p")[0].innerHTML = "<br><b> Chinese Fried Milk </b><br> \
     <br>Makes about 20 pieces. <br>\
     <br>Ingredients:<br>\
@@ -350,7 +350,7 @@ function createRecipeContent(id, modal){
     18. Let cool before serving."
   }
 
-  if (id == "sago"){
+  if (id == "sago") {
     modal.getElementsByTagName("p")[0].innerHTML = "<br><b> Coconut Sago </b><br> \
     <br>Ingredients:<br>\
     1 cup sago <br> \
@@ -364,7 +364,7 @@ function createRecipeContent(id, modal){
     3. When everything is boiling, add sugar, taro, and papaya if you desire."
   }
 
-  if (id == "broccolipotatobites"){
+  if (id == "broccolipotatobites") {
     modal.getElementsByTagName("p")[0].innerHTML = "<br><b> Broccoli Potato Bites </b><br> \
     <br>Ingredients:<br>\
     2 cup broccoli (pulsed)<br>\
@@ -381,7 +381,7 @@ function createRecipeContent(id, modal){
     5. Lay on greased baking sheet, and bake for 20 min.<br>\
     6. Serve!"
   }
-  if (id == "almondflourcookies"){
+  if (id == "almondflourcookies") {
     modal.getElementsByTagName("p")[0].innerHTML = "<br><b> Almond Flour Cookies </b><br> \
     <br><br>Makes 16-18 cookies. <br>\
     <br>​Ingredients:<br>\
@@ -400,5 +400,5 @@ function createRecipeContent(id, modal){
     7. Use a cookie cutter (bowls, cups, etc. will also work in making circles) to cut your cookies.<br>\
     8. Bake for roughly 10 min in preheated oven on parchment paper. You don't have to worry about spreading them apart too far. <br>\
     9. Serve!"
-    }
+  }
 }
